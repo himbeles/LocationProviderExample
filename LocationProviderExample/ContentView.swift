@@ -22,9 +22,12 @@ struct ContentView: View {
 
     var body: some View {
         VStack{
-        Text("latitude \(locationProvider.location?.coordinate.latitude ?? 0)")
+            Text("latitude \(locationProvider.location?.coordinate.latitude ?? 0)")
+                .accessibility(identifier: "latLabel")
         Text("longitude \(locationProvider.location?.coordinate.longitude ?? 0)")
+            .accessibility(identifier: "longLabel")
         }
+        
     }
 }
 
