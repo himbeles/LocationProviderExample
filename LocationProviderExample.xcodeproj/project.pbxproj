@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		A0E65B482504CEBB0048F32F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E65B472504CEBB0048F32F /* ContentView.swift */; };
 		A0E65B4A2504CEBD0048F32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E65B492504CEBD0048F32F /* Assets.xcassets */; };
 		A0E65B4D2504CEBD0048F32F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E65B4C2504CEBD0048F32F /* Preview Assets.xcassets */; };
+		A0E65B562504CFF30048F32F /* LocationProvider in Frameworks */ = {isa = PBXBuildFile; productRef = A0E65B552504CFF30048F32F /* LocationProvider */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E65B562504CFF30048F32F /* LocationProvider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = LocationProviderExample;
+			packageProductDependencies = (
+				A0E65B552504CFF30048F32F /* LocationProvider */,
+			);
 			productName = LocationProviderExample;
 			productReference = A0E65B422504CEBB0048F32F /* LocationProviderExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = A0E65B392504CEBB0048F32F;
+			packageReferences = (
+				A0E65B542504CFF30048F32F /* XCRemoteSwiftPackageReference "LocationProvider" */,
+			);
 			productRefGroup = A0E65B432504CEBB0048F32F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0E65B542504CFF30048F32F /* XCRemoteSwiftPackageReference "LocationProvider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/himbeles/LocationProvider.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0E65B552504CFF30048F32F /* LocationProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0E65B542504CFF30048F32F /* XCRemoteSwiftPackageReference "LocationProvider" */;
+			productName = LocationProvider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0E65B3A2504CEBB0048F32F /* Project object */;
 }
