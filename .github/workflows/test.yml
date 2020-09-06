@@ -26,4 +26,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build and run tests
         run: |
-          xcodebuild -project LocationProviderExample.xcodeproj/ -scheme LocationProviderExample -destination 'platform=iOS Simulator,OS=13,name=iPhone 11 Pro' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          xcodebuild -project LocationProviderExample.xcodeproj/ -scheme LocationProviderExample -destination 'platform=iOS Simulator,OS=13.6,name=iPhone 11 Pro' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
