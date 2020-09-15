@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0675B0825115BC400B936C8 /* LocationProvider in Frameworks */ = {isa = PBXBuildFile; productRef = A0675B0725115BC400B936C8 /* LocationProvider */; };
 		A0E65B462504CEBB0048F32F /* LocationProviderExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E65B452504CEBB0048F32F /* LocationProviderExampleApp.swift */; };
 		A0E65B482504CEBB0048F32F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E65B472504CEBB0048F32F /* ContentView.swift */; };
 		A0E65B4A2504CEBD0048F32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E65B492504CEBD0048F32F /* Assets.xcassets */; };
 		A0E65B4D2504CEBD0048F32F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E65B4C2504CEBD0048F32F /* Preview Assets.xcassets */; };
-		A0E65B562504CFF30048F32F /* LocationProvider in Frameworks */ = {isa = PBXBuildFile; productRef = A0E65B552504CFF30048F32F /* LocationProvider */; };
 		A0E65B602504D4E20048F32F /* LocationProviderExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E65B5F2504D4E20048F32F /* LocationProviderExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E65B562504CFF30048F32F /* LocationProvider in Frameworks */,
+				A0675B0825115BC400B936C8 /* LocationProvider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 			);
 			name = LocationProviderExample;
 			packageProductDependencies = (
-				A0E65B552504CFF30048F32F /* LocationProvider */,
+				A0675B0725115BC400B936C8 /* LocationProvider */,
 			);
 			productName = LocationProviderExample;
 			productReference = A0E65B422504CEBB0048F32F /* LocationProviderExample.app */;
@@ -163,7 +163,7 @@
 				};
 			};
 			buildConfigurationList = A0E65B3D2504CEBB0048F32F /* Build configuration list for PBXProject "LocationProviderExample" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -172,7 +172,7 @@
 			);
 			mainGroup = A0E65B392504CEBB0048F32F;
 			packageReferences = (
-				A0E65B542504CFF30048F32F /* XCRemoteSwiftPackageReference "LocationProvider" */,
+				A0675B0625115BC400B936C8 /* XCRemoteSwiftPackageReference "LocationProvider" */,
 			);
 			productRefGroup = A0E65B432504CEBB0048F32F /* Products */;
 			projectDirPath = "";
@@ -283,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -338,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -463,20 +463,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A0E65B542504CFF30048F32F /* XCRemoteSwiftPackageReference "LocationProvider" */ = {
+		A0675B0625115BC400B936C8 /* XCRemoteSwiftPackageReference "LocationProvider" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/himbeles/LocationProvider.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
+				minimumVersion = 1.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A0E65B552504CFF30048F32F /* LocationProvider */ = {
+		A0675B0725115BC400B936C8 /* LocationProvider */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A0E65B542504CFF30048F32F /* XCRemoteSwiftPackageReference "LocationProvider" */;
+			package = A0675B0625115BC400B936C8 /* XCRemoteSwiftPackageReference "LocationProvider" */;
 			productName = LocationProvider;
 		};
 /* End XCSwiftPackageProductDependency section */
